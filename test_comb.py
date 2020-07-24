@@ -11,32 +11,32 @@ class TestMyCombinatoria(unittest.TestCase):
         self.comb = Combinatoria()
 
     def test_combinatoria(self):
-        self.calc.combi(-3,5)
-        self.assertEqual("error", self.calc.combi)
+        self.comb.combi(-3,5)
+        self.assertEqual("error", self.comb.ans)
 
-        self.calc.combi(5,-3)
-        self.assertEqual("error", self.calc.combi)
+        self.comb.combi(5,-3)
+        self.assertEqual("error", self.comb.ans)
         
-        self.calc.combi(-2,3)
-        self.assertEqual("error", self.calc.combi)
+        self.comb.combi(-2,3)
+        self.assertEqual("error", self.comb.ans)
 
-        self.calc.combi(3,0)
-        self.assertEqual(1, self.calc.combi)
+        self.comb.combi(3,0)
+        self.assertEqual(1, self.comb.ans)
 
-        self.calc.combi(4,1)
-        self.assertEqual(4, self.calc.combi)
+        self.comb.combi(4,1)
+        self.assertEqual(4, self.comb.ans)
 
-        self.calc.combi(5,2)
-        self.assertEqual(10, self.calc.combi)
+        self.comb.combi(5,2)
+        self.assertEqual(10, self.comb.ans)
 
-        self.calc.combi(3,3)
-        self.assertEqual(1, self.calc.combi)
+        self.comb.combi(3,3)
+        self.assertEqual(1, self.comb.ans)
 
-        self.calc.combi("4",5)
-        self.assertEqual("error", self.calc.combi)
+        self.comb.combi("4",5)
+        self.assertEqual("error", self.comb.ans)
 
-        self.calc.combi(1,1)
-        self.assertEqual(1, self.calc.combi)
+        self.comb.combi(1,1)
+        self.assertEqual(1, self.comb.ans)
 
 
 if __name__ == '__main__':
